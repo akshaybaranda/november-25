@@ -1,0 +1,71 @@
+<html>
+    <head>
+	    <title>CSS Grid</title>
+	    <style>
+		  body{
+		  font-family: arial,helvetica;
+		  }
+		  h1{padding:0 0 0 40px;}
+		  
+		  .container{
+		    background: #eee;
+			width: 720px;
+			margin:45px auto 0;
+			
+			display:grid;
+			grid-template-columns: repeat(3, 1fr );
+			grid-template-rows:120px 60px 100px 400px 50px ;
+			grid-gap: 15px ;
+			
+			grid-template-areas:" header header header"
+			                    " menu menu menu"
+								" box1 box2 sidebar"
+								"content content sidebar"
+								"footer footer footer"
+		 }
+		 .header{
+		   background:orangered;
+		   grid-area:header;
+		 }
+		 .menu{
+		   background:yellowgreen;
+		   grid-area:menu;
+		 }
+		 .box1{
+		   background:MEDIUMPURPLE;
+		  grid-area:box1;
+		 }
+		 .box2{
+		   background:hotpink;
+		   grid-area:box2;
+		 }
+		 .sidebar{
+		   background:royalblue;
+		   grid-area:sidebar;
+		 }
+		 .content{
+		   background:RED;
+		   grid-area:content;
+		 }
+		 .footer{
+		   background:goldenrod;
+		   grid-area:footer;
+		 }
+		 .items{ color: #fff;font-size:20px;font-wight: bo
+		  </style>
+    </head>
+	<body>
+	<h1>Akshay Baranda : CSS Nameing tag</h1>
+	
+	<div class="container">
+	  <div class="items header ">Header</div>
+	  <div class="items menu ">Menu</div>
+	  <div class="items box1 ">Box1</div>
+	  <div class="items box2 ">Box2</div>
+	  <div class="items sidebar ">Sidebar</div>
+	  <div class="items content ">Content</div>
+	  <div class="items footer ">Footer</div>
+	</div>
+	</body>
+	
+</html>
